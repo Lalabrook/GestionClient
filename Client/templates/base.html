@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    {%load static%}
+		<link rel="stylesheet" type="text/css" href= "../static/css/style.css"/>
+    <script type="text/javascript" src=" {{ STATIC_URL }} ../static/jquery-3.6.0.min.js">
+    </script> 
+      <meta charset="utf-8">
+      <title> Gestion Client - {% block title %} Accueil {% endblock %} </title>
+
+    </head>
+
+
+    <body id="{% block bodyid %}genericBody{% endblock %}">
+
+      <header class = "{% block headerClass %}genericPage{% endblock %}">
+		{% block headerContent %}{% endblock %}
+      </header>
+
+	<section id= "content"> 
+
+	{% block content %} {% endblock %}
+
+	</section>
+
+    <footer id="{% block footerid %}genericFooter{% endblock %}">
+    </footer>
+
+
+    </body>
+</html>

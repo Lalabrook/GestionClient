@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} HomePage {% endblock %}
+
+{% block headerContent %} Gestion des Clients{% endblock %}
+{% block bodyid %} homeBody {% endblock %}
+
+{% block content %} 
+<div class="Homebtn">
+    <div class = "HomeBtn"><button class = "btn" type="button"> <a href= "AddPage"> Ajouter un Client </a></button></div>
+    <div class= "HomeBtn"><button class = "btn" type="button">  <a href= "ClientList"> Supprimer un Client </a></button></div>
+    <div class= "HomeBtn"><button class = "btn"  type="button"> <a href= "ClientList">Modifier les informations d'un Client</a></button></div>
+</div>
+<aside class= "HomeAside">
+  <div class="AsideBtn"> <button class = "btn"  type="button"><a href= "import"> <strong>Importer </strong> des Clients de Excel </a></button></div>
+  <div class="AsideBtn"><button class = "btn"  type="button"><a href= "export-xlsx"> <strong>Exporter </strong> des Clients de Excel </a></button></div>
+  <div class="AsideBtn"><button class = "btn"  type="button"><a href= "ClientList"> Afficher la liste des Clients </a></button></div>
+</aside>
+{% endblock %}

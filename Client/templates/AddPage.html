@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load static%}
+
+{% block title %} AddPage {% endblock %}
+
+{% block bodyid %} homeBody {% endblock %}
+
+{% block headerClass %}genericPage{% endblock %}
+{% block content %} 
+   <div >
+   <form action="" method="post" class = "AddForm">
+   {% csrf_token %}
+    <div class="success"> {{success}} </div> 
+    <div class = "error"> {{error}} </div>
+    {{form.as_p}}
+
+    <div><input type = "submit" value= "Ajouter" class= "btn" id="AddBtn"/> </div>
+    </form>
+    </div>
+{% endblock %}
+

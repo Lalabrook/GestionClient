@@ -1,0 +1,13 @@
+{% extends "../base.html" %}
+
+{% block title %} ListPage {% endblock %}
+{% block headerContent %} <strong> Liste des clients : </strong>{% endblock %}
+
+{% block content %} 
+    {% for client in clients_list %}
+       <ul>
+        <li>{{client.nom}} {{client.prenom}}  <a href="{% url 'Delete' client.id %}"> Supprimer </a>  <a href="{% url 'Update' client.id %}"> Modifier </a> </li>
+        </ul> 
+    {% endfor %}
+
+{% endblock %}
