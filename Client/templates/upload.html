@@ -4,11 +4,11 @@
 
 {% block content %} 
 <p> {{result}} </p>
-<form method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data" class = "AddForm">
 		{% csrf_token %}
 		{{ form.as_p }}
 		<input type="file" name="myfile" >
-        <button type="submit"> Importer </button>
+        <button type="submit" class= "btn" id = "ConfirmationBtn"> Importer </button>
 </form>
 
 {% endblock %}

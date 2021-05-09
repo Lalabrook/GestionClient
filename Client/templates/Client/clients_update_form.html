@@ -3,10 +3,11 @@
 {% block title %} UpdatePage {% endblock %}
 
 {% block content %} 
+<div  class = "AddForm" >
  <form method="post">
 		{% csrf_token %}
 		{{ form.as_p }}
-		<input type="submit" value="Modifier" >
+		<input type="submit" value="Modifier"  class= "btn" id = "SubmitBtn" >
 	</form>
-
+</div>
 {% endblock %}

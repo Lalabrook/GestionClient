@@ -4,10 +4,13 @@
 {% block headerContent %} <strong> Liste des clients : </strong>{% endblock %}
 
 {% block content %} 
+<div  class = "AddForm">
+
     {% for client in clients_list %}
+    {{client.nom}} {{client.prenom}}  <button class = "btn" id = "ModifyBtn" type="button"> <a href="{% url 'Update' client.id %}" > Modifier </a> </button> <button class = "btn" id = "DeleteBtn"  type="button"> <a href="{% url 'Delete' client.id %} " > Supprimer </a> </button>
        <ul>
         <li>{{client.nom}} {{client.prenom}}  <a href="{% url 'Delete' client.id %}"> Supprimer </a>  <a href="{% url 'Update' client.id %}"> Modifier </a> </li>
         </ul> 
     {% endfor %}
-
+</div>
 {% endblock %}

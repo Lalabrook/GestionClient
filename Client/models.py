@@ -3,17 +3,17 @@ from django.db  import models
 from django.urls import reverse
 
 class Clients(models.Model):
-    nom= models.CharField(max_length=20)
+    nom = models.CharField(max_length=20)
 
-    prenom= models.CharField(max_length=20)
+    prenom = models.CharField(max_length=20)
 
-    email= models.EmailField()
+    email = models.EmailField()
 
-    telephone= models.CharField(max_length=15)
+    telephone = models.CharField(max_length=15)
 
-    date_souscription= models.DateField()
+    date_souscription = models.DateField()
     
-    situation= models.BooleanField(default= True)
+    situation = models.BooleanField(default= True)
 
     class Meta:
         db_table = "web_member"

@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-{% load static%}
 
 {% block title %} AddPage {% endblock %}
 
@@ -15,7 +14,7 @@
     <div class = "error"> {{error}} </div>
     {{form.as_p}}
 
-    <div><input type = "submit" value= "Ajouter" class= "btn" id="AddBtn"/> </div>
+    <div><input type = "submit" value= "Ajouter" class= "btn" id="SubmitBtn"/> </div>
     </form>
     </div>
 {% endblock %}

@@ -5,11 +5,13 @@
         color: #FFFFFF;
     }
     
-    header.genericPage {
-        background-color: #284b63;
-        padding: 80px 0;
+    .Center {
         text-align: center;
-        color: #FFFFFF;
+    }
+    
+    #ConfirmationBtn {
+        background: darkblue;
+        font-size: 25px;
     }
     
     body {
@@ -51,7 +53,7 @@
         width: 400px;
     }
     
-    #AddBtn {
+    #SubmitBtn {
         position: relative;
         left: 40%;
         background: darkblue;
@@ -82,10 +84,14 @@
         color: white;
     }
     
-    .DeleteLien {
-        color: blue;
+    #DeleteBtn {
         position: relative;
-        left: 25px;
+        left: 85px;
+    }
+    
+    #ModifyBtn {
+        position: relative;
+        left: 50px;
     }
     
     .AddForm {
