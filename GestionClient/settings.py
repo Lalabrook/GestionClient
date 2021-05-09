@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e^(vs=v=!v94p7$q9rqbdy3b1yy9xum3^&%b1a^emvq^7j$g_!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', 'childeric.pythonanywhere.com']
 
 
 # Application definition
@@ -132,7 +132,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR,'/templates')]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static')
+    os.path.join(BASE_DIR, 'static'),
     
-    ]
+]
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
